@@ -9,23 +9,29 @@ namespace Basics
 {
     public partial class MainPage : ContentPage
     {
+        private readonly IList<string> _quotes;
+        private int _quoteIndex = 0;
+
         public MainPage()
         {
-            InitializeComponent();
-
-            switch (Device.RuntimePlatform)
+            _quotes = new List<string>()
             {
-                case Device.iOS:
-                    Padding = new Thickness(0, 20, 0, 0);
-                    break;
+                "quote 1",
+                "quote 2",
+                "quote 3",
+                "quote 4",
+                "quote 5"
+            };
+            InitializeComponent();
+        }
 
-                case Device.Android:
-                    Padding = new Thickness(0, 0, 0, 0);
-                    break;
-
-                case Device.UWP:
-                    Padding = new Thickness(0, 0, 0, 0);
-                    break;
+        private void OnButtonClicked(object sender, EventArgs e)
+        {
+            this.LabelQuote.Text = _quotes[_quoteIndex];
+            _quoteIndex++;
+            if (_quoteIndex == _quotes.Count)
+            {
+                _quoteIndex = 0;
             }
         }
     }
