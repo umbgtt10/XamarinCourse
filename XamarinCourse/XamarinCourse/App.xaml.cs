@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.CustomGroupedList);
+            MainPage = new PageFactory().Build(PageType.ContextList);
         }
 
         protected override void OnStart()

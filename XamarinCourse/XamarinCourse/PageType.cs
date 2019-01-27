@@ -10,6 +10,7 @@
         RelativeLayout = 5,
         List = 6,
         CustomList = 7,
-        CustomGroupedList = 8
+        CustomGroupedList = 8,
+        ContextList = 9,
     }
 }
