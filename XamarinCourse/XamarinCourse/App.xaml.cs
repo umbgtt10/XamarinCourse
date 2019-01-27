@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.ContextList);
+            MainPage = new PageFactory().Build(PageType.PullToRefresh);
         }
 
         protected override void OnStart()

@@ -42,6 +42,10 @@
       <DependentUpon>ListPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\PullToRefreshPlusSearchList.xaml.cs">
+      <DependentUpon>PullToRefreshPlusSearchList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PageFactory.cs" />
@@ -96,6 +100,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\ContextActionList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\PullToRefreshPlusSearchList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

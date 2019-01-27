@@ -32,6 +32,9 @@ namespace XamarinCourse
 
                 case PageType.ContextList:
                     return new ContextActionList();
+
+                case PageType.PullToRefresh:
+                    return new PullToRefreshPlusSearchList();
             }
 
             return null;
