@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.Layouts.StackLayout.Exercise2.StackLayoutExercise2">
+    <StackLayout Padding="10, 10, 0, 0">
+        <Label Text="Fotografer" 
+               FontAttributes="Bold" 
+               FontSize="10"/>
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/"/>
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Like" 
+                    FontSize="12"/>
+            <Button Text="Comment" 
+                    FontSize="12"/>
+            <Button Text="Share" 
+                    FontSize="12" />
+        </StackLayout>
+        <BoxView Color="#f0f0f0" 
+                 HeightRequest="1"/>
+        <Label Text="700 Likes" 
+               FontAttributes="Bold" 
+               FontSize="8"/>
+        <Label Text="This is a shot yesterday in Skanor, Sweden, when driving home, from a couple of days in Denmark" 
+               FontSize="6"/>
+    </StackLayout>
+</ContentPage>
