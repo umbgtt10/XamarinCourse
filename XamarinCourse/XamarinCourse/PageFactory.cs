@@ -26,6 +26,9 @@ namespace XamarinCourse
 
                 case PageType.CustomList:
                     return new CustomListPage();
+
+                case PageType.CustomGroupedList:
+                    return new CustomGroupedList();
             }
 
             return null;

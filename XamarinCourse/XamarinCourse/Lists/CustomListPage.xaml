@@ -19,7 +19,7 @@
                             <Label Text="{Binding Slogan}" 
                                    FontSize="10" />
                         </StackLayout>
-                        <Button Text="Follow" />
+                        <Button Text="Follow"/>
                     </StackLayout>
                 </ViewCell>
             </DataTemplate>

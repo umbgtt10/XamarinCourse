@@ -26,6 +26,10 @@
       <DependentUpon>StackLayoutExercise2.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Lists\CustomGroupedList.xaml.cs">
+      <DependentUpon>CustomGroupedList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Lists\CustomListPage.xaml.cs">
       <DependentUpon>CustomListPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -34,7 +38,8 @@
       <DependentUpon>ListPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Lists\Person.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PageFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PageType.cs" />
   </ItemGroup>
@@ -75,6 +80,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\CustomListPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\CustomGroupedList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

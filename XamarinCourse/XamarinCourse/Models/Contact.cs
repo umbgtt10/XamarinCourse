@@ -1,8 +1,8 @@
 ﻿using Xamarin.Forms;
 
-namespace XamarinCourse.Lists
+namespace XamarinCourse.Models
 {
-    public class Person
+    public class Contact
     {
         public string Name { get; set; }
         public string Slogan { get; set; }

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCourse.Models;
 
 namespace XamarinCourse.Lists
 {
@@ -16,10 +17,10 @@ namespace XamarinCourse.Lists
 		{
 			InitializeComponent ();
 
-            var list = new List<Person>()
+            var list = new List<Contact>()
             {
-                new Person() {Name = "Umberto", Slogan = "I am here", ImageUrl = ImageSource.FromUri(new Uri("http://lorempixel.com/100/100/people/1"))},
-                new Person()
+                new Contact() {Name = "Umberto", Slogan = "I am here", ImageUrl = ImageSource.FromUri(new Uri("http://lorempixel.com/100/100/people/1"))},
+                new Contact()
                 {
                     Name = "John", Slogan = "I am there",
                     ImageUrl = ImageSource.FromUri(new Uri("http://lorempixel.com/100/100/people/2"))
