@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.Layouts.Grid.GridExercise1"
+             BackgroundColor="#354242">
+    <Grid Padding="40" RowSpacing="10" ColumnSpacing="10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="4*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="3*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label x:Name="DialLabel" 
+                   TextColor="White" 
+                   HorizontalOptions="CenterAndExpand" 
+                   VerticalOptions="CenterAndExpand" 
+                   FontSize="30"
+                   Grid.Row="0" Grid.ColumnSpan="3"/>
+        <Button x:Name="ButtonN1" Text="1" Grid.Row="1" Grid.Column="0" 
+                    FontSize="15"  
+                    HorizontalOptions="CenterAndExpand" 
+                    VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked" />
+        <Button x:Name="ButtonN2" Text="2" Grid.Row="1" Grid.Column="1" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN3" Text="3" Grid.Row="1" Grid.Column="2" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN4" Text="4" Grid.Row="2" Grid.Column="0" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN5" Text="5" Grid.Row="2" Grid.Column="1" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN6" Text="6" Grid.Row="2" Grid.Column="2" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN7" Text="7" Grid.Row="3" Grid.Column="0" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN8" Text="8" Grid.Row="3" Grid.Column="1" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"  
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN9" Text="9" Grid.Row="3" Grid.Column="2" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand"  
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button x:Name="ButtonN10" Text="0" Grid.Row="4" Grid.Column="1" 
+                FontSize="15"  
+                HorizontalOptions="CenterAndExpand" 
+                VerticalOptions="CenterAndExpand" 
+                    TextColor="#28282c" 
+                    BackgroundColor="#fff" 
+                    CornerRadius="30" Clicked="Button_OnClicked"/>
+        <Button Text="Dial" Grid.Row="5" Grid.ColumnSpan="3" FontSize="30" 
+                    BackgroundColor="#96ca2d" CornerRadius="30"/>
+    </Grid>
+</ContentPage>

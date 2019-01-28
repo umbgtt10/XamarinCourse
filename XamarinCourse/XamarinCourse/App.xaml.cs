@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.PullToRefresh);
+            MainPage = new PageFactory().Build(PageType.GridLayoutExercise2);
         }
 
         protected override void OnStart()

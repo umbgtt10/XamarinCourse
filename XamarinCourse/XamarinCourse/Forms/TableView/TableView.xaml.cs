@@ -21,7 +21,7 @@ namespace XamarinCourse.Forms.TableView
         {
             // Main to be wrapped in navigation
             var contactMethodsPage = new ContactMethodsPage();
-            contactMethodsPage.ThisListView.ItemSelected += (source, args) =>
+            contactMethodsPage.ContactMethods.ItemSelected += (source, args) =>
                 {
                     ContactMethod.Text = args.SelectedItem.ToString();
                     Navigation.PopAsync();

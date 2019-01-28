@@ -55,6 +55,14 @@
       <DependentUpon>TableView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\Grid\GridExercise1.xaml.cs">
+      <DependentUpon>GridExercise1.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Layouts\Grid\GridExercise2.xaml.cs">
+      <DependentUpon>GridExercise2.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Layouts\StackLayout\Exercise1\StackLayoutExercise1.xaml.cs">
       <DependentUpon>StackLayoutExercise1.xaml</DependentUpon>
     </Compile>
@@ -96,6 +104,7 @@
   <ItemGroup>
     <None Include="$(MSBuildThisFileDirectory)Essentials\Docs\XAML-Essentials-Cheat-Sheet.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Essentials\Docs\XAML-Essentials-Exercise.pdf" />
+    <None Include="$(MSBuildThisFileDirectory)Layouts\Docs\Grid-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Layouts\Docs\StackLayout-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Lists\Docs\Lists-Cheat-Sheet.pdf" />
   </ItemGroup>
@@ -113,7 +122,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Forms\Slider\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Layouts\Grid\" />
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\RelativeLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Navigation\Docs\" />
@@ -198,6 +206,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Forms\TableView\ContactMethodsPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\Grid\GridExercise1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\Grid\GridExercise2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
