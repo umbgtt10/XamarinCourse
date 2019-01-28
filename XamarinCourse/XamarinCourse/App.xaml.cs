@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.GridLayoutExercise2);
+            MainPage = new PageFactory().Build(PageType.HierarchicalNavigation);
         }
 
         protected override void OnStart()

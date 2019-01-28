@@ -92,6 +92,14 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\HierarchicalNavigation.xaml.cs">
+      <DependentUpon>HierarchicalNavigation.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\IntroductionPage.xaml.cs">
+      <DependentUpon>IntroductionPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)PageFactory.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)PageType.cs" />
   </ItemGroup>
@@ -125,6 +133,7 @@
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\RelativeLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Navigation\Docs\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Lists\ListPage.xaml">
@@ -218,6 +227,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\Grid\GridExercise2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\HierarchicalNavigation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\IntroductionPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

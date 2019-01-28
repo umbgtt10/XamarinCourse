@@ -4,12 +4,13 @@ using XamarinCourse.Layouts.Grid;
 using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
+using XamarinCourse.Navigation.Hierarchical;
 
 namespace XamarinCourse
 {
     public class PageFactory
     {
-        public ContentPage Build(PageType pageType)
+        public Page Build(PageType pageType)
         {
             switch (pageType)
             {
@@ -17,7 +18,7 @@ namespace XamarinCourse
                     return new EssentialsPage();
 
                 case PageType.StackLayoutExercise1:
-                    return  new StackLayoutExercise1();
+                    return new StackLayoutExercise1();
 
                 case PageType.StackLayoutExercise2:
                     return new StackLayoutExercise2();
@@ -42,6 +43,13 @@ namespace XamarinCourse
 
                 case PageType.PullToRefresh:
                     return new PullToRefreshPlusSearchList();
+
+                case PageType.HierarchicalNavigation:
+                    return new NavigationPage(new HierarchicalNavigation())
+                    {
+                        BackgroundColor = Color.Gray,
+                        BarTextColor = Color.Aqua
+                    };
             }
 
             return null;

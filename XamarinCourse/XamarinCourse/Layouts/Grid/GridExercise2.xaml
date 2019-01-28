@@ -16,8 +16,7 @@
                    FontAttributes="Bold" 
                    FontSize ="20" 
                    TextColor="White"
-                   Text="Welcome to Xamarin"
-                   />
+                   Text="Welcome to Xamarin"/>
             <Label FontSize ="10" 
                    TextColor="White"
                    HorizontalOptions="Center" 
