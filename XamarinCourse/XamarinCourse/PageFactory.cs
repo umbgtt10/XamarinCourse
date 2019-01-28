@@ -5,6 +5,7 @@ using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
 using XamarinCourse.Navigation.Hierarchical;
+using XamarinCourse.Navigation.Modal;
 
 namespace XamarinCourse
 {
@@ -50,6 +51,9 @@ namespace XamarinCourse
                         BackgroundColor = Color.Gray,
                         BarTextColor = Color.Aqua
                     };
+
+                case PageType.ModalNavigation:
+                    return new NavigationPage(new ModalNavigation());
             }
 
             return null;

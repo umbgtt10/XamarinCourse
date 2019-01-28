@@ -14,6 +14,7 @@
         CustomGroupedList = 8,
         ContextList = 9,
         PullToRefresh = 10,
-        HierarchicalNavigation = 11
+        HierarchicalNavigation = 11,
+        ModalNavigation = 12,
     }
 }
