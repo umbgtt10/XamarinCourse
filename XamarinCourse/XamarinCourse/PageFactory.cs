@@ -1,6 +1,7 @@
 ﻿using Xamarin.Forms;
 using XamarinCourse.Advanced.ResourceDictionary;
 using XamarinCourse.Advanced.ResourceDictionary.StyleExercise;
+using XamarinCourse.DataAccess.Sqlite;
 using XamarinCourse.Essentials;
 using XamarinCourse.Layouts.Grid;
 using XamarinCourse.Layouts.StackLayout.Exercise1;
@@ -78,6 +79,9 @@ namespace XamarinCourse
 
                 case PageType.StyleExercise:
                     return new StyleExercise();
+
+                case PageType.PersistencyPage:
+                    return new PersistencyPage();
             }
 
             return null;

@@ -25,5 +25,9 @@
 
         ResourceDictionaryPage = 20,
         StyleExercise = 21,
+
+        //
+
+        PersistencyPage = 30
     }
 }
