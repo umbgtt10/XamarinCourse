@@ -7,6 +7,7 @@ using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
 using XamarinCourse.Navigation.CustomMasterDetail;
+using XamarinCourse.Navigation.Exercise;
 using XamarinCourse.Navigation.Hierarchical;
 using XamarinCourse.Navigation.Modal;
 using XamarinCourse.Navigation.SimpleMasterDetail;
@@ -68,6 +69,9 @@ namespace XamarinCourse
 
                 case PageType.TabbedPageNavigation:
                     return new SimpleTabbedPage();
+
+                case PageType.InstagramTabbedPageExercise:
+                    return new NavigationPage(new InstagramTabbedPageExercise());
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

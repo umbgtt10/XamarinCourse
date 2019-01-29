@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.Navigation.Exercise.MainContentPage"
+             Title="Contacts"
+             Padding="5">
+    <ListView x:Name="ContactsListView" ItemSelected="ContactsListView_OnItemSelected">
+        <ListView.ItemTemplate>
+            <DataTemplate>
+                <ViewCell>
+                    <StackLayout Orientation="Horizontal" Padding="1">
+                        <Image Source="{Binding ImageUrl}"  
+                               Aspect="AspectFill" 
+                               WidthRequest="30" 
+                               HeightRequest="30"
+                               />
+                        <Label Text="{Binding Description}" 
+                               FontSize="10" VerticalOptions="Center"/>
+                    </StackLayout>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+</ContentPage>

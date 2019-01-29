@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.TabbedPageNavigation);
+            MainPage = new PageFactory().Build(PageType.InstagramTabbedPageExercise);
         }
 
         protected override void OnStart()

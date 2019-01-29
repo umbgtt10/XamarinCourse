@@ -108,6 +108,24 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Models\Contact.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\ContactGroup.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\InstagramTabbedPageExercise.xaml.cs">
+      <DependentUpon>InstagramTabbedPageExercise.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\MainContentPage.xaml.cs">
+      <DependentUpon>MainContentPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\Model\Activity.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\ActivityService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\Model\UserProfile.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\Services\XamarinActivityService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\Services\XamarinUserProfileService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\SimpleProfilePage.xaml.cs">
+      <DependentUpon>SimpleProfilePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\Exercise\UserProfileService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\HierarchicalNavigation.xaml.cs">
       <DependentUpon>HierarchicalNavigation.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -164,6 +182,7 @@
     <None Include="$(MSBuildThisFileDirectory)Layouts\Docs\Grid-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Layouts\Docs\StackLayout-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Lists\Docs\Lists-Cheat-Sheet.pdf" />
+    <None Include="$(MSBuildThisFileDirectory)Navigation\Docs\Navigation-Exercise-InstagramApp.pdf" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Layouts\StackLayout\Exercise1\StackLayoutExercise1.xaml">
@@ -181,7 +200,6 @@
     <Folder Include="$(MSBuildThisFileDirectory)Forms\Slider\" />
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\AbsoluteLayout\" />
     <Folder Include="$(MSBuildThisFileDirectory)Layouts\RelativeLayout\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Navigation\Docs\" />
     <Folder Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\" />
   </ItemGroup>
   <ItemGroup>
@@ -336,6 +354,24 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\SimpleTabbedPage\SimpleContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Exercise\InstagramTabbedPageExercise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Exercise\MainContentPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Exercise\SimpleProfilePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

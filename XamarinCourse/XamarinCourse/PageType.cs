@@ -19,6 +19,7 @@
         CustomMasterDetailNavigation = 13,
         MasterDetailNavigation = 14,
         TabbedPageNavigation = 15,
+        InstagramTabbedPageExercise = 16,
 
         //
 
