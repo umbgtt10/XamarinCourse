@@ -6,8 +6,10 @@ using XamarinCourse.Layouts.Grid;
 using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
+using XamarinCourse.Navigation.CustomMasterDetail;
 using XamarinCourse.Navigation.Hierarchical;
 using XamarinCourse.Navigation.Modal;
+using XamarinCourse.Navigation.SimpleMasterDetail;
 
 namespace XamarinCourse
 {
@@ -56,6 +58,12 @@ namespace XamarinCourse
 
                 case PageType.ModalNavigation:
                     return new NavigationPage(new ModalNavigation());
+
+                case PageType.CustomMasterDetailNavigation:
+                    return new NavigationPage(new CustomMasterDetailPage());
+
+                case PageType.MasterDetailNavigation:
+                    return new SimpleMasterDetailPage();
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

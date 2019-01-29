@@ -16,6 +16,8 @@
         PullToRefresh = 10,
         HierarchicalNavigation = 11,
         ModalNavigation = 12,
+        CustomMasterDetailNavigation = 13,
+        MasterDetailNavigation = 14,
 
         //
 

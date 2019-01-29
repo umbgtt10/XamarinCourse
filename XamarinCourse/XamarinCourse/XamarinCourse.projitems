@@ -10,6 +10,14 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\SimpleMasterDetail\ContactDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\SimpleMasterDetail\SimpleMasterDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\ResourceDictionaryPage.xaml.cs">
@@ -107,6 +115,22 @@
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Hierarchical\IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\CustomMasterDetail\ContactDetailPage.xaml.cs">
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\CustomMasterDetail\CustomMasterDetailPage.xaml.cs">
+      <DependentUpon>CustomMasterDetailPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\SimpleMasterDetail\ContactDetailPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Navigation\SimpleMasterDetail\SimpleMasterDetailPage.xaml.cs">
+      <SubType>Code</SubType>
+      <DependentUpon>SimpleMasterDetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Navigation\Modal\IntroductionPage.xaml.cs">
       <DependentUpon>IntroductionPage.xaml</DependentUpon>
@@ -280,6 +304,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\StyleExercise\StyleExercise.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\CustomMasterDetail\CustomMasterDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\CustomMasterDetail\ContactDetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
