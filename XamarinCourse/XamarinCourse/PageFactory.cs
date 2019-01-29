@@ -10,6 +10,7 @@ using XamarinCourse.Navigation.CustomMasterDetail;
 using XamarinCourse.Navigation.Hierarchical;
 using XamarinCourse.Navigation.Modal;
 using XamarinCourse.Navigation.SimpleMasterDetail;
+using XamarinCourse.Navigation.SimpleTabbedPage;
 
 namespace XamarinCourse
 {
@@ -64,6 +65,9 @@ namespace XamarinCourse
 
                 case PageType.MasterDetailNavigation:
                     return new SimpleMasterDetailPage();
+
+                case PageType.TabbedPageNavigation:
+                    return new SimpleTabbedPage();
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

@@ -18,6 +18,7 @@
         ModalNavigation = 12,
         CustomMasterDetailNavigation = 13,
         MasterDetailNavigation = 14,
+        TabbedPageNavigation = 15,
 
         //
 
