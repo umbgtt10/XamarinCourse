@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">iPhoneSimulator</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{A99C95D8-8E67-423D-848A-5BED6B6B966B}</ProjectGuid>
+    <ProjectGuid>{9760F7C2-5870-470A-9E08-F3C86F67ACD9}</ProjectGuid>
     <ProjectTypeGuids>{FEACFBD2-3405-455C-9665-78FE426C6842};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <TemplateGuid>{6143fdea-f3c2-4a09-aafa-6e230626515e}</TemplateGuid>
     <OutputType>Exe</OutputType>
@@ -148,8 +148,16 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1008975" />
+    <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
+      <Version>3.0.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="3.4.0.1029999" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
-  <Import Project="..\XamarinCourse\XamarinCourse.projitems" Label="Shared" />
+  <ItemGroup>
+    <ProjectReference Include="..\XamarinCourse\XamarinCourse.csproj">
+      <Project>{16BB003D-BE18-46CD-B87A-0CBDC6536823}</Project>
+      <Name>XamarinCourse</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
