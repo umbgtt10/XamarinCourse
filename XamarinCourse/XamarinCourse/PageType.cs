@@ -16,5 +16,10 @@
         PullToRefresh = 10,
         HierarchicalNavigation = 11,
         ModalNavigation = 12,
+
+        //
+
+        ResourceDictionaryPage = 20,
+        StyleExercise = 21,
     }
 }

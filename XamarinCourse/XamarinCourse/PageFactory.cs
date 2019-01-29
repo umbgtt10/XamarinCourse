@@ -1,4 +1,6 @@
 ﻿using Xamarin.Forms;
+using XamarinCourse.Advanced.ResourceDictionary;
+using XamarinCourse.Advanced.ResourceDictionary.StyleExercise;
 using XamarinCourse.Essentials;
 using XamarinCourse.Layouts.Grid;
 using XamarinCourse.Layouts.StackLayout.Exercise1;
@@ -54,6 +56,12 @@ namespace XamarinCourse
 
                 case PageType.ModalNavigation:
                     return new NavigationPage(new ModalNavigation());
+
+                case PageType.ResourceDictionaryPage:
+                    return new ResourceDictionaryPage();
+
+                case PageType.StyleExercise:
+                    return new StyleExercise();
             }
 
             return null;

@@ -12,6 +12,14 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\ResourceDictionaryPage.xaml.cs">
+      <DependentUpon>ResourceDictionaryPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\StyleExercise\StyleExercise.xaml.cs">
+      <DependentUpon>StyleExercise.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
@@ -118,6 +126,7 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)Advanced\Docs\Style-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Essentials\Docs\XAML-Essentials-Cheat-Sheet.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Essentials\Docs\XAML-Essentials-Exercise.pdf" />
     <None Include="$(MSBuildThisFileDirectory)Layouts\Docs\Grid-Exercise.pdf" />
@@ -259,6 +268,18 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navigation\Modal\IntroductionPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\ResourceDictionaryPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Advanced\ResourceDictionary\StyleExercise\StyleExercise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>

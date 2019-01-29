@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.ModalNavigation);
+            MainPage = new PageFactory().Build(PageType.StyleExercise);
         }
 
         protected override void OnStart()
