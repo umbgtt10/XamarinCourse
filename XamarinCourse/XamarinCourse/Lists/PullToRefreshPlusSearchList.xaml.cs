@@ -50,6 +50,8 @@ namespace XamarinCourse.Lists
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             PullToRefreshList.ItemsSource = GetFreshList(e.NewTextValue);
+
+            
         }
     }
 }

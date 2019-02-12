@@ -3,10 +3,12 @@ using XamarinCourse.Advanced.ResourceDictionary;
 using XamarinCourse.Advanced.ResourceDictionary.StyleExercise;
 using XamarinCourse.DataAccess.Sqlite;
 using XamarinCourse.Essentials;
+using XamarinCourse.Forms.Exercise;
 using XamarinCourse.Layouts.Grid;
 using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
+using XamarinCourse.Lists.Exercise;
 using XamarinCourse.Navigation.CustomMasterDetail;
 using XamarinCourse.Navigation.Exercise;
 using XamarinCourse.Navigation.Hierarchical;
@@ -52,6 +54,9 @@ namespace XamarinCourse
                 case PageType.PullToRefresh:
                     return new PullToRefreshPlusSearchList();
 
+                case PageType.ListExercise:
+                    return new AirBnbView();
+
                 case PageType.HierarchicalNavigation:
                     return new NavigationPage(new HierarchicalNavigation())
                     {
@@ -73,6 +78,9 @@ namespace XamarinCourse
 
                 case PageType.InstagramTabbedPageExercise:
                     return new NavigationPage(new InstagramTabbedPageExercise());
+
+                case PageType.FormsContactBookExercise:
+                    return new ContactBookExercise();
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

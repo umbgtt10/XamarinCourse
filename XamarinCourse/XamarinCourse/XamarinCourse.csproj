@@ -18,12 +18,17 @@
 
   <ItemGroup>
     <Folder Include="Advanced\MessageCenter\" />
+    <Folder Include="Advanced\Exercise\" />
     <Folder Include="DataAccess\ApplicationProperties\" />
     <Folder Include="DataAccess\Docs\" />
+    <Folder Include="DataAccess\Exercise\ContactBook\" />
+    <Folder Include="DataAccess\Exercise\NetflixRoulette\" />
     <Folder Include="DataAccess\RESTServices\Docs\" />
     <Folder Include="DataAccess\SQLite\Exercise\" />
     <Folder Include="DataAccess\SQLite\Docs\" />
     <Folder Include="Forms\Docs\" />
+    <Folder Include="Mvvm\Docs\" />
+    <Folder Include="Mvvm\Exercise\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -34,6 +39,9 @@
 
   <ItemGroup>
     <EmbeddedResource Update="Forms\Exercise\ContactBookExercise.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Lists\Exercise\AirBnbView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

@@ -14,19 +14,22 @@
         CustomGroupedList = 8,
         ContextList = 9,
         PullToRefresh = 10,
-        HierarchicalNavigation = 11,
-        ModalNavigation = 12,
-        CustomMasterDetailNavigation = 13,
-        MasterDetailNavigation = 14,
-        TabbedPageNavigation = 15,
-        InstagramTabbedPageExercise = 16,
-
+        ListExercise = 11,
+        HierarchicalNavigation = 12,
+        ModalNavigation = 13,
+        CustomMasterDetailNavigation = 14,
+        MasterDetailNavigation = 15,
+        TabbedPageNavigation = 16,
+        InstagramTabbedPageExercise = 17,
+        FormsContactBookExercise = 18,
+        DataAccessContactBookSqlite = 19,
+        DataAccessContactBookNetflixRoulette = 20,
         //
 
         ResourceDictionaryPage = 20,
         StyleExercise = 21,
-
-        //
+        MvvmExercise = 22,
+        MessagingCentreExercise = 23,
 
         PersistencyPage = 30
     }

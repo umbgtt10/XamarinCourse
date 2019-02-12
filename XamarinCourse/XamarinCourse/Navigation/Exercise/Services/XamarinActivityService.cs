@@ -5,7 +5,7 @@ namespace XamarinCourse.Navigation.Exercise.Services
 {
     public class XamarinActivityService : ActivityService
     {
-        private IList<Activity> _activities;
+        private readonly IList<Activity> _activities;
 
         public XamarinActivityService()
         {
