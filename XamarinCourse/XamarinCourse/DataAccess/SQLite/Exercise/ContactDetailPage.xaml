@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.DataAccess.Sqlite.Exercise.ContactDetailPage">
+    <StackLayout>
+        <TableView Intent="Form">
+            <TableRoot>
+                <TableSection Title="Name">
+                    <EntryCell x:Name="FirstName" Label="First Name" />
+                    <EntryCell x:Name="LastName" Label="Last Name" />
+                </TableSection>
+                <TableSection Title="Contact">
+                    <EntryCell x:Name="Phone" Label="Phone" Keyboard="Numeric"  />
+                    <EntryCell x:Name="Email" Label="Email" Keyboard="Email"  />
+                </TableSection>
+                <TableSection Title="Blocked">
+                    <SwitchCell x:Name="Blocked" Text="Blocked" On="false"/>
+                </TableSection>
+            </TableRoot>
+        </TableView>
+        <Button Text="Save" HorizontalOptions="Center" Clicked="Button_OnClicked"/>
+    </StackLayout>
+</ContentPage>

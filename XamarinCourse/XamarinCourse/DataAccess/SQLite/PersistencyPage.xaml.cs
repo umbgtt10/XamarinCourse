@@ -8,7 +8,7 @@ namespace XamarinCourse.DataAccess.Sqlite
 {
 	public partial class PersistencyPage : ContentPage
     {
-        private SQLiteAsyncConnection _connection;
+        private readonly SQLiteAsyncConnection _connection;
         private ObservableCollection<Recipe> _recipes;
 
 		public PersistencyPage()

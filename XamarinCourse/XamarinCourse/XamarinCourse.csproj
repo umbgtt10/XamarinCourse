@@ -24,19 +24,28 @@
     <Folder Include="DataAccess\Exercise\ContactBook\" />
     <Folder Include="DataAccess\Exercise\NetflixRoulette\" />
     <Folder Include="DataAccess\RESTServices\Docs\" />
-    <Folder Include="DataAccess\SQLite\Exercise\" />
     <Folder Include="DataAccess\SQLite\Docs\" />
     <Folder Include="Forms\Docs\" />
-    <Folder Include="Mvvm\Docs\" />
-    <Folder Include="Mvvm\Exercise\" />
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="DataAccess\SQLite\Exercise\ContactBookExerciseSqlite.xaml.cs">
+      <DependentUpon>ContactBookExerciseSqlite.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="DataAccess\SQLite\Exercise\ContactDetailPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
     <Compile Update="DataAccess\SQLite\PersistencyPage.xaml.cs">
       <DependentUpon>PersistencyPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Forms\Exercise\ContactDetailPage.xaml.cs">
       <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Mvvm\Exercise\ContactBookExerciseSqliteMvvm.xaml.cs">
+      <DependentUpon>ContactBookExerciseSqliteMvvm.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Mvvm\Exercise\ContactDetailPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
   </ItemGroup>
 

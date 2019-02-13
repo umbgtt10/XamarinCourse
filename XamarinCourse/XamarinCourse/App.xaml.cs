@@ -11,7 +11,7 @@ namespace XamarinCourse
         {
             InitializeComponent();
 
-            MainPage = new PageFactory().Build(PageType.FormsContactBookExercise);
+            MainPage = new PageFactory().Build(PageType.MvvmExercise);
         }
 
         protected override void OnStart()

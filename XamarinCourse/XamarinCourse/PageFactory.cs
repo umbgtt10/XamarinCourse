@@ -9,6 +9,7 @@ using XamarinCourse.Layouts.StackLayout.Exercise1;
 using XamarinCourse.Layouts.StackLayout.Exercise2;
 using XamarinCourse.Lists;
 using XamarinCourse.Lists.Exercise;
+using XamarinCourse.Mvvm.Exercise;
 using XamarinCourse.Navigation.CustomMasterDetail;
 using XamarinCourse.Navigation.Exercise;
 using XamarinCourse.Navigation.Hierarchical;
@@ -84,6 +85,9 @@ namespace XamarinCourse
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();
+
+                case PageType.MvvmExercise:
+                    return new NavigationPage(new ContactBookExerciseSqliteMvvm());
 
                 case PageType.StyleExercise:
                     return new StyleExercise();

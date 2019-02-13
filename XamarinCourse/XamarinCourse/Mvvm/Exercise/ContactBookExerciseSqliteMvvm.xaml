@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.Mvvm.Exercise.ContactBookExerciseSqliteMvvm"
+             x:Name="ThisPage">
+    <StackLayout>
+        <Button Text="Add" HorizontalOptions="End" Command="{Binding AddCommand}"/>
+        <ListView ItemsSource="{Binding Contacts}" ItemSelected="OnItemSelected">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <TextCell Text="{Binding Name}" >
+                        <TextCell.ContextActions>
+                            <MenuItem Text="Delete" 
+                                      Command ="{Binding
+                                                 Source={x:Reference ThisPage},
+                                                 Path=ViewModel.DeleteCommand}"
+                                      IsDestructive="true"/>
+                        </TextCell.ContextActions>
+                    </TextCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
