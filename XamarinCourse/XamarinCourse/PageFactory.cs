@@ -2,6 +2,7 @@
 using XamarinCourse.Advanced.Exercise;
 using XamarinCourse.Advanced.ResourceDictionary;
 using XamarinCourse.Advanced.ResourceDictionary.StyleExercise;
+using XamarinCourse.DataAccess.Exercise.NetflixRoulette;
 using XamarinCourse.DataAccess.Sqlite;
 using XamarinCourse.Essentials;
 using XamarinCourse.Forms.Exercise;
@@ -87,6 +88,9 @@ namespace XamarinCourse
 
                 case PageType.DataAccessContactBookSqlite:
                     return new NavigationPage(new ContactBookExerciseSqlite());
+
+                case PageType.DataAccessContactBookNetflixRoulette:
+                    return new NavigationPage(new NetflixRoulette());
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

@@ -10,6 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
     <PackageReference Include="PCLStorage" Version="1.0.2" />
     <PackageReference Include="sqlite-net-pcl" Version="1.5.231" />
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle" Version="3.0.0.5" />
@@ -20,10 +21,7 @@
     <Folder Include="Advanced\MessageCenter\" />
     <Folder Include="DataAccess\ApplicationProperties\" />
     <Folder Include="DataAccess\Docs\" />
-    <Folder Include="DataAccess\Exercise\NetflixRoulette\" />
     <Folder Include="DataAccess\RESTServices\Docs\" />
-    <Folder Include="DataAccess\SQLite\Docs\" />
-    <Folder Include="DataAccess\SQLite\Exercise\" />
     <Folder Include="Forms\Docs\" />
   </ItemGroup>
 
@@ -55,6 +53,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="DataAccess\Exercise\NetflixRoulette\MovieDetail.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="DataAccess\Exercise\NetflixRoulette\NetflixRoulette.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Forms\Exercise\ContactBookExercise.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

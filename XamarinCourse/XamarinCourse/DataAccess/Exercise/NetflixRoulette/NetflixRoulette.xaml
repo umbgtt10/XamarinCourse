@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="XamarinCourse.DataAccess.Exercise.NetflixRoulette.NetflixRoulette">
+    <StackLayout>
+        <SearchBar x:Name="ThisSearchBar" 
+                   Placeholder="Search..." 
+                   SearchCommand="{Binding SearchCommand}"  
+                   SearchCommandParameter="{Binding {Reference ThisSearchBar}, Source=Text}"/>
+        <ListView x:Name="GroupedList" 
+              IsGroupingEnabled="true" 
+              GroupDisplayBinding="{Binding Title}"
+              GroupShortNameBinding="{Binding Title}"
+              HasUnevenRows="True" ItemSelected="GroupedList_OnItemSelected" >
+            <ListView.ItemTemplate >
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout 
+                        Orientation="Horizontal" 
+                        Padding="5,0,0,0" >
+                            <Image Source="{Binding ImageUrl}" Aspect="AspectFit" />
+                            <StackLayout 
+                            HorizontalOptions="StartAndExpand">
+                                <Label Text="{Binding Title}" 
+                                   FontSize="12" 
+                                   FontAttributes="Bold"/>
+                                <Label Text="{Binding Year}" 
+                                   FontSize="10" />
+                            </StackLayout>
+                            <Button Text="Follow"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
