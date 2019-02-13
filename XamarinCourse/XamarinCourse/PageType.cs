@@ -24,13 +24,10 @@
         FormsContactBookExercise = 18,
         DataAccessContactBookSqlite = 19,
         DataAccessContactBookNetflixRoulette = 20,
-        //
-
         ResourceDictionaryPage = 20,
         StyleExercise = 21,
         MvvmExercise = 22,
         MessagingCentreExercise = 23,
-
         PersistencyPage = 30
     }
 }

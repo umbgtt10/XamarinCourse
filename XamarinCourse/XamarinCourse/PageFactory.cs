@@ -80,7 +80,7 @@ namespace XamarinCourse
                     return new NavigationPage(new InstagramTabbedPageExercise());
 
                 case PageType.FormsContactBookExercise:
-                    return new ContactBookExercise();
+                    return new NavigationPage(new ContactBookExercise());
 
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();

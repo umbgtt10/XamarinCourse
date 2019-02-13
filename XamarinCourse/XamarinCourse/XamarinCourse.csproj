@@ -35,10 +35,16 @@
     <Compile Update="DataAccess\SQLite\PersistencyPage.xaml.cs">
       <DependentUpon>PersistencyPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Forms\Exercise\ContactDetailPage.xaml.cs">
+      <DependentUpon>ContactDetailPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Update="Forms\Exercise\ContactBookExercise.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Forms\Exercise\ContactDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Lists\Exercise\AirBnbView.xaml">

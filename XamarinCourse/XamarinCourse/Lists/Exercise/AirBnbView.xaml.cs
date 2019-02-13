@@ -13,13 +13,16 @@ namespace XamarinCourse.Lists.Exercise
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AirBnbView : ContentPage
     {
-        private ObservableCollection<Location> _entries;
+        public AirBnbViewModel _vm
+        {
+            get { return BindingContext as AirBnbViewModel; }
+        }
 
         private void SearchBar_OnTextChanged(object sender, TextChangedEventArgs e)
         {
             var text = e.NewTextValue;
 
-            var newList = _entries.Where(element => element.Title.StartsWith(text));
+            var newList = _vm.Entries.Where(element => element.Title.StartsWith(text));
 
             UpdateList(newList);
         }
@@ -28,14 +31,7 @@ namespace XamarinCourse.Lists.Exercise
         {
             InitializeComponent();
 
-            Init();
-        }
-
-        private void Init()
-        {
-            _entries = new ObservableCollection<Location>(Generate());
-
-            UpdateList(_entries);
+            UpdateList(Generate());
         }
 
         private void UpdateList(IEnumerable<Location> list)
@@ -70,14 +66,14 @@ namespace XamarinCourse.Lists.Exercise
 
         private void PullToRefreshList_OnRefreshing(object sender, EventArgs e)
         {
-            Init();
+            UpdateList(Generate());
         }
 
         private void MenuItem_OnClicked(object sender, EventArgs e)
         {
             var element = (sender as MenuItem).CommandParameter as Location;
 
-            _entries.Remove(element);
+            _vm.Entries.Remove(element);
         }
     }
 }
