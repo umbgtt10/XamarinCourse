@@ -20,7 +20,7 @@ namespace XamarinCourse.Mvvm.Exercise
             BindingContext = vm;
         }
 
-        protected async override void OnAppearing()
+        protected override async void OnAppearing()
         {
             await ViewModel.Refresh();
 

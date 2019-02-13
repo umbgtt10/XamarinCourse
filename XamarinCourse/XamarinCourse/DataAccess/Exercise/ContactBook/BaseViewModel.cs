@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace XamarinCourse.DataAccess.Sqlite.Exercise
+namespace XamarinCourse.DataAccess.Exercise.ContactBook
 {
     public abstract class BaseViewModel : INotifyPropertyChanged
     {

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
-namespace XamarinCourse.DataAccess.Sqlite.Exercise
+namespace XamarinCourse.Advanced.Exercise
 {
     public class ContactBookExerciseViewModel : BaseViewModel
     {

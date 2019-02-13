@@ -18,21 +18,26 @@
 
   <ItemGroup>
     <Folder Include="Advanced\MessageCenter\" />
-    <Folder Include="Advanced\Exercise\" />
     <Folder Include="DataAccess\ApplicationProperties\" />
     <Folder Include="DataAccess\Docs\" />
-    <Folder Include="DataAccess\Exercise\ContactBook\" />
     <Folder Include="DataAccess\Exercise\NetflixRoulette\" />
     <Folder Include="DataAccess\RESTServices\Docs\" />
     <Folder Include="DataAccess\SQLite\Docs\" />
+    <Folder Include="DataAccess\SQLite\Exercise\" />
     <Folder Include="Forms\Docs\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="DataAccess\SQLite\Exercise\ContactBookExerciseSqlite.xaml.cs">
+    <Compile Update="Advanced\Exercise\ContactBookExerciseSqliteMessagingCenter.xaml.cs">
+      <DependentUpon>ContactBookExerciseSqliteMessagingCenter.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Advanced\Exercise\ContactDetailPage.xaml.cs">
+      <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="DataAccess\Exercise\ContactBook\ContactBookExerciseSqlite.xaml.cs">
       <DependentUpon>ContactBookExerciseSqlite.xaml</DependentUpon>
     </Compile>
-    <Compile Update="DataAccess\SQLite\Exercise\ContactDetailPage.xaml.cs">
+    <Compile Update="DataAccess\Exercise\ContactBook\ContactDetailPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
     <Compile Update="DataAccess\SQLite\PersistencyPage.xaml.cs">

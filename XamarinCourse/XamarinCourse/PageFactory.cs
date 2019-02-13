@@ -1,4 +1,5 @@
 ﻿using Xamarin.Forms;
+using XamarinCourse.Advanced.Exercise;
 using XamarinCourse.Advanced.ResourceDictionary;
 using XamarinCourse.Advanced.ResourceDictionary.StyleExercise;
 using XamarinCourse.DataAccess.Sqlite;
@@ -16,6 +17,7 @@ using XamarinCourse.Navigation.Hierarchical;
 using XamarinCourse.Navigation.Modal;
 using XamarinCourse.Navigation.SimpleMasterDetail;
 using XamarinCourse.Navigation.SimpleTabbedPage;
+using ContactBookExerciseSqlite = XamarinCourse.DataAccess.Exercise.ContactBook.ContactBookExerciseSqlite;
 
 namespace XamarinCourse
 {
@@ -83,6 +85,9 @@ namespace XamarinCourse
                 case PageType.FormsContactBookExercise:
                     return new NavigationPage(new ContactBookExercise());
 
+                case PageType.DataAccessContactBookSqlite:
+                    return new NavigationPage(new ContactBookExerciseSqlite());
+
                 case PageType.ResourceDictionaryPage:
                     return new ResourceDictionaryPage();
 
@@ -91,6 +96,9 @@ namespace XamarinCourse
 
                 case PageType.StyleExercise:
                     return new StyleExercise();
+
+                case PageType.MessagingCentreExercise:
+                    return new NavigationPage(new ContactBookExerciseSqliteMessagingCenter());
 
                 case PageType.PersistencyPage:
                     return new PersistencyPage();

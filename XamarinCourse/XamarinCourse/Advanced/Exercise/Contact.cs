@@ -1,6 +1,6 @@
 ﻿using SQLite;
 
-namespace XamarinCourse.DataAccess.Sqlite.Exercise
+namespace XamarinCourse.Advanced.Exercise
 {
     public class Contact
     {

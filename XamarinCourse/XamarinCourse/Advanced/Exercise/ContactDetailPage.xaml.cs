@@ -7,13 +7,11 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace XamarinCourse.DataAccess.Sqlite.Exercise
+namespace XamarinCourse.Advanced.Exercise
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ContactDetailPage : ContentPage
 	{
-        public event EventHandler<Contact> ContactAdded;
-
         public ContactDetailPage()
 		{
 			InitializeComponent ();
@@ -21,15 +19,12 @@ namespace XamarinCourse.DataAccess.Sqlite.Exercise
 
         private void Button_OnClicked(object sender, EventArgs e)
         {
-            if (ContactAdded != null)
+            var newContact = new Contact()
             {
-                var newContact = new Contact()
-                {
-                    Name = FirstName.Text, Surname = LastName.Text
-                };
+                Name = FirstName.Text, Surname = LastName.Text
+            };
 
-                ContactAdded.Invoke(this, newContact);
-            }
+            MessagingCenter.Send(this, "OnAddingNewContact", newContact);
 
             Navigation.PopAsync();
         }

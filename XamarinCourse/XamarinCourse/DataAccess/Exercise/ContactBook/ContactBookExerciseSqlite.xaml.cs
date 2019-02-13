@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XamarinCourse.DataAccess.Sqlite;
 
-namespace XamarinCourse.DataAccess.Sqlite.Exercise
+namespace XamarinCourse.DataAccess.Exercise.ContactBook
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class ContactBookExerciseSqlite : ContentPage
